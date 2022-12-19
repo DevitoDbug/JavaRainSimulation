@@ -13,6 +13,7 @@ public class PanelClass extends JPanel implements ActionListener {
         for(int i = 0 ; i<1000; i++)
             rain.addRainDrop();
 
+        this.setLayout(null);
         this.setBackground(Color.BLACK);
         this.setVisible(true);
 

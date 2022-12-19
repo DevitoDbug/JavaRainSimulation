@@ -7,10 +7,11 @@ public class Main {
         PanelClass panel = new PanelClass();
         JFrame frame = new JFrame("Rain Simulation");
 
+        panel.setBounds(0,0,1000,700);
         frame.add(panel);
 
-        frame.pack();
-        frame.setBounds(200 , 50 , 1000 , 700 );
+        frame.setLayout(null);
+        frame.setBounds(200 , 0 , 1000 , 700 );
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
 

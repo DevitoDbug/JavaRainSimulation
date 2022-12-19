@@ -5,10 +5,11 @@ import java.util.Random;
 public class RainDropSimulation {
     Random r = new Random();
 
-    double x = r.nextDouble(1000) ;
-    double y  = -100;
-    int size = r.nextInt(10);
-    double speed = r.nextDouble(9);
+    double x = r.nextDouble(0, 2000) ;
+    double y  = r.nextDouble(-500, -200);
+    int size = r.nextInt(5, 10);
+
+    double speed = r.nextDouble(4 , 10);
 
     ArrayList<RainDrop> rainDrops ;
 
@@ -22,9 +23,10 @@ public class RainDropSimulation {
     {
 
             rainDrops.add(new RainDrop(x, y, size, speed));
-            x = r.nextDouble(1000) ;
-            size = r.nextInt(10);
-            speed = r.nextDouble(1);
+            x = r.nextDouble(0, 2000) ;
+            size = r.nextInt(5, 10);
+            speed = r.nextDouble(4 , 10);
+
 
     }
 
@@ -44,13 +46,26 @@ public class RainDropSimulation {
 
     void draw (Graphics  g)
     {
-
-        System.out.println("\n\n");
-        for (RainDrop rainDrop : rainDrops)
+        //for (RainDrop rainDrop : rainDrops)
+        for (int i = 0 ; i < rainDrops.size() ; i++)
         {
+            g.setColor(Color.GREEN);
+            g.fillOval(800, 500 , 20 , 20);
             g.setColor(Color.cyan);
-            g.fillRect((int) rainDrop.getX(), (int) rainDrop.getY(), rainDrop.getSize()/2, rainDrop.getSize());
+            g.fillRect((int) rainDrops.get(i).getX(), (int) rainDrops.get(i).getY(),
+                    rainDrops.get(i).getSize()/2, rainDrops.get(i).getSize()+5);
 
+            //Regenerating if we have reached the end of the panel
+            if ((int) rainDrops.get(i).getY() > 800)
+            {
+                rainDrops.remove(i);
+                rainDrops.add(new RainDrop(x, y, size, speed));
+                x = r.nextDouble(0, 2000) ;
+                size = r.nextInt(5, 10);
+                speed = r.nextDouble(4 , 10);
+
+            }
         }
+
     }
 }
