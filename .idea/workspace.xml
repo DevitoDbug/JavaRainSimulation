@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="788f25d0-95ed-4821-869f-179d3caa122b" name="Changes" comment="new implementation on rain drop generation">
+    <list default="true" id="788f25d0-95ed-4821-869f-179d3caa122b" name="Changes" comment="made rain drops to regenerate from the top">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PanelClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RainDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RainDrop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RainDropSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RainDropSimulation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,12 +83,20 @@
       <option name="project" value="LOCAL" />
       <updated>1671462685696</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="made rain drops to regenerate from the top">
+      <created>1671467292174</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671467292174</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second commit" />
     <MESSAGE value="new implementation on rain drop generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="new implementation on rain drop generation" />
+    <MESSAGE value="made rain drops to regenerate from the top" />
+    <option name="LAST_COMMIT_MESSAGE" value="made rain drops to regenerate from the top" />
   </component>
 </project>

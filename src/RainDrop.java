@@ -26,5 +26,9 @@ public class RainDrop {
     }
 
     //updates the drops y position based on the speed of the drop
-    void update () {y  += speed ;}
+    void update ()
+    {
+        y  += speed ;
+        speed += 0.03;//simulate gravity effect i.e drop moving faster as it goes down
+    }
 }
