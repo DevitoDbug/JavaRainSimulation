@@ -8,7 +8,7 @@ public class RainDropSimulation {
     double x = r.nextDouble(1000) ;
     double y  = -100;
     int size = r.nextInt(10);
-    double speed = r.nextDouble(5);
+    double speed = r.nextDouble(9);
 
     ArrayList<RainDrop> rainDrops ;
 
@@ -20,12 +20,12 @@ public class RainDropSimulation {
 
     void addRainDrop()
     {
-        for ( int i = 0 ; i < 1000  ; i++) {
+
             rainDrops.add(new RainDrop(x, y, size, speed));
             x = r.nextDouble(1000) ;
             size = r.nextInt(10);
             speed = r.nextDouble(1);
-        }
+
     }
 
     //updating the postion of each and every raindrop
@@ -45,11 +45,12 @@ public class RainDropSimulation {
     void draw (Graphics  g)
     {
 
+        System.out.println("\n\n");
         for (RainDrop rainDrop : rainDrops)
         {
-            System.out.println("Draw function x:"+rainDrop.x+" y:"+rainDrop.y);
-            g.setColor(Color.white);
+            g.setColor(Color.cyan);
             g.fillRect((int) rainDrop.getX(), (int) rainDrop.getY(), rainDrop.getSize()/2, rainDrop.getSize());
+
         }
     }
 }

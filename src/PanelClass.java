@@ -10,8 +10,8 @@ public class PanelClass extends JPanel implements ActionListener {
     {
         timer = new Timer (1 , this);
         timer.start();
-        rain.addRainDrop();
-
+        for(int i = 0 ; i<1000; i++)
+            rain.addRainDrop();
 
         this.setBackground(Color.BLACK);
         this.setVisible(true);
