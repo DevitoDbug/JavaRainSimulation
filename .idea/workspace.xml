@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="788f25d0-95ed-4821-869f-179d3caa122b" name="Changes" comment="final touches">
+    <list default="true" id="788f25d0-95ed-4821-869f-179d3caa122b" name="Changes" comment="Added screenshots of the project">
+      <change afterPath="$PROJECT_DIR$/src/screenshot/screenshot.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RainDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RainDrop.java" afterDir="false" />
     </list>
@@ -97,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671468720361</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added screenshots of the project">
+      <created>1681033762380</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681033762380</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -105,6 +114,7 @@
     <MESSAGE value="new implementation on rain drop generation" />
     <MESSAGE value="made rain drops to regenerate from the top" />
     <MESSAGE value="final touches" />
-    <option name="LAST_COMMIT_MESSAGE" value="final touches" />
+    <MESSAGE value="Added screenshots of the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added screenshots of the project" />
   </component>
 </project>
